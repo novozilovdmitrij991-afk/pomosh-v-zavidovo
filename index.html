@@ -1,429 +1,95 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Помощь в Завидово — ваш человек на месте. Проверка дома, доставка, вывоз и бытовые задачи.">
-<title>Помощь в Завидово — ваш человек на месте</title>
-
-<style>
-:root{
-  --bg:#f4f3ed;
-  --ink:#172019;
-  --muted:#687069;
-  --green:#315d42;
-  --dark:#244b34;
-  --soft:#e6ece5;
-}
-
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-
-body{
-  margin:0;
-  font-family:Arial,sans-serif;
-  background:var(--bg);
-  color:var(--ink);
-  line-height:1.55;
-}
-
-.wrap{
-  max-width:1120px;
-  margin:auto;
-  padding:0 22px;
-}
-
-header{
-  height:68px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  border-bottom:1px solid #0001;
-}
-
-header a{
-  text-decoration:none;
-  color:var(--ink);
-  font-weight:800;
-}
-
-.logo{font-size:18px}
-.tel{font-size:14px}
-
-.hero,section{padding:70px 0}
-
-.tag{
-  text-transform:uppercase;
-  letter-spacing:.13em;
-  font-size:12px;
-  font-weight:900;
-  color:var(--green);
-  margin:0 0 15px;
-}
-
-h1{
-  font-size:clamp(43px,7vw,78px);
-  line-height:.98;
-  letter-spacing:-.045em;
-  max-width:900px;
-  margin:0 0 24px;
-}
-
-h2{
-  font-size:clamp(31px,4.5vw,50px);
-  line-height:1.05;
-  letter-spacing:-.035em;
-  max-width:820px;
-  margin:0 0 30px;
-}
-
-.lead{
-  font-size:20px;
-  max-width:770px;
-  color:var(--muted);
-}
-
-.buttons{
-  display:flex;
-  gap:11px;
-  flex-wrap:wrap;
-  margin-top:28px;
-}
-
-.btn{
-  padding:15px 20px;
-  border-radius:9px;
-  text-decoration:none;
-  font-weight:900;
-}
-
-.main{
-  background:var(--green);
-  color:white;
-}
-
-.alt{
-  border:1px solid #aab2ab;
-  color:var(--ink);
-}
-
-.small,.card p,.trust p{
-  color:var(--muted);
-}
-
-.scenarios,.steps{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:12px;
-}
-
-.scenario,.step{
-  padding:18px 0;
-  border-top:2px solid var(--ink);
-  font-weight:800;
-}
-
-.inspect{
-  background:var(--green);
-  color:white;
-}
-
-.inspect .tag{
-  color:#cfe1d3;
-}
-
-.inspect-grid,.trust-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:55px;
-}
-
-.inspect p{
-  color:#dbe6dd;
-}
-
-.price{
-  font-size:42px;
-  font-weight:900;
-  margin-top:20px;
-}
-
-.checks{
-  list-style:none;
-  padding:0;
-  margin:0;
-}
-
-.checks li{
-  padding:13px 0;
-  border-bottom:1px solid #ffffff33;
-  font-weight:700;
-}
-
-.services{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:14px;
-}
-
-.card{
-  background:white;
-  border-radius:16px;
-  padding:28px;
-}
-
-.card h3{
-  font-size:24px;
-  margin:20px 0 8px;
-}
-
-.cost{
-  color:var(--green)!important;
-  font-weight:900;
-}
-
-.trust{
-  background:var(--soft);
-}
-
-.notice{
-  font-size:13px;
-  color:var(--muted);
-  max-width:800px;
-  margin-top:30px;
-}
-
-.contact{
-  background:var(--dark);
-  color:white;
-}
-
-.contact .tag,
-.contact p{
-  color:#dbe6dd;
-}
-
-.contact .main{
-  background:white;
-  color:var(--dark);
-}
-
-.contact .alt{
-  border-color:#91aa98;
-  color:white;
-}
-
-.number{
-  font-size:21px;
-  font-weight:900!important;
-  color:white!important;
-}
-
-footer{
-  text-align:center;
-  padding:28px;
-  color:var(--muted);
-  font-size:13px;
-}
-
-@media(max-width:760px){
-  .hero,section{padding:55px 0}
-  .lead{font-size:18px}
-  .scenarios,.steps{grid-template-columns:1fr 1fr}
-  .inspect-grid,.trust-grid,.services{
-    grid-template-columns:1fr;
-    gap:25px;
-  }
-}
-</style>
-</head>
-
-<body>
-
-<header class="wrap">
-  <a class="logo" href="#top">Помощь в Завидово</a>
-  <a class="tel" href="tel:+79607185126">8 960 718-51-26</a>
-</header>
-
-<main id="top">
-
-<div class="hero">
-<div class="wrap">
-
-<p class="tag">Дмитрий · Завидово и рядом</p>
-
-<h1>Ваш человек на месте в Завидово</h1>
-
-<p class="lead">
-Не можете приехать сами? Проверю дом и участок, встречу доставку или мастера, помогу с перевозкой, вывозом и небольшими бытовыми задачами.
-</p>
-
-<div class="buttons">
-<a class="btn main" href="#contact">Описать задачу</a>
-<a class="btn alt" href="tel:+79607185126">Позвонить</a>
-</div>
-
-<p class="small">
-Задачу и стоимость согласуем до начала работ.
-</p>
-
-</div>
-</div>
-
-<section>
-<div class="wrap">
-
-<p class="tag">Когда это удобно</p>
-
-<h2>Когда самому ехать долго или просто некогда</h2>
-
-<div class="scenarios">
-<div class="scenario">Давно не были в доме</div>
-<div class="scenario">После ветра, снега или непогоды</div>
-<div class="scenario">Нужно встретить доставку или мастера</div>
-<div class="scenario">Хотите проверить всё перед приездом</div>
-</div>
-
-</div>
-</section>
-
-<section class="inspect">
-<div class="wrap inspect-grid">
-
-<div>
-
-<p class="tag">Проверка дома</p>
-
-<h2>Проверю дом, когда вы не можете приехать</h2>
-
-<p>
-Это не охрана и не техническая экспертиза. Я приезжаю на место, визуально проверяю согласованные точки и отправляю вам фотоотчёт.
-</p>
-
-<div class="price">от 2 000 ₽</div>
-
-<p>
-Базовый выезд — в пределах 10 км. Более дальний выезд согласуем отдельно.
-</p>
-
-</div>
-
-<ul class="checks">
-<li>Выезд на автомобиле до 10 км</li>
-<li>Осмотр начиная с калитки и входной зоны</li>
-<li>Обход дома и других построек снаружи</li>
-<li>Фиксация видимых повреждений и изменений</li>
-<li>Снятие показаний счётчиков</li>
-<li>Фотоотчёт после осмотра</li>
-</ul>
-
-</div>
-</section>
-
-<section>
-<div class="wrap">
-
-<p class="tag">Другие задачи</p>
-
-<h2>Можно обратиться и по другим бытовым вопросам</h2>
-
-<div class="services">
-
-<div class="card">
-<h3>Доставка мебели и техники</h3>
-<p>Забрать и привезти мебель, бытовую технику или другие крупные вещи.</p>
-<p class="cost">Стоимость — после описания задачи</p>
-</div>
-
-<div class="card">
-<h3>Вывоз старой мебели и техники</h3>
-<p>Помогу освободить дом, квартиру, гараж или участок от ненужных крупногабаритных вещей.</p>
-<p class="cost">Стоимость — после описания задачи</p>
-</div>
-
-<div class="card">
-<h3>Встретить доставку или мастера</h3>
-<p>Если вам неудобно приезжать ради доставки или визита специалиста, обсудим задачу заранее.</p>
-<p class="cost">Стоимость — по договорённости</p>
-</div>
-
-<div class="card">
-<h3>Мастер на час</h3>
-<p>Собрать, закрепить, повесить, перенести или выполнить другую небольшую бытовую работу.</p>
-<p class="cost">Стоимость — после описания задачи</p>
-</div>
-
-</div>
-</div>
-</section>
-
-<section class="trust">
-<div class="wrap trust-grid">
-
-<div>
-<p class="tag">Локальная помощь</p>
-<h2>Не сервис из другого города. Дмитрий — ваш человек на месте.</h2>
-</div>
-
-<div>
-<p>
-Вы заранее описываете задачу. Я уточняю детали, согласовываем стоимость и только после этого приступаю. Если во время работы обнаружится что-то дополнительное — сначала свяжусь с вами.
-</p>
-
-<p>
-<b>Работаю по Завидово, Новозавидовскому и ближайшим населённым пунктам.</b>
-</p>
-</div>
-
-</div>
-</section>
-
-<section>
-<div class="wrap">
-
-<p class="tag">Как это работает</p>
-
-<h2>Четыре простых шага</h2>
-
-<div class="steps">
-<div class="step">01<br>Пишете или звоните</div>
-<div class="step">02<br>Описываете задачу</div>
-<div class="step">03<br>Согласуем объём и стоимость</div>
-<div class="step">04<br>Выполняю задачу и отчитываюсь</div>
-</div>
-
-<p class="notice">
-Осмотр дома является визуальной бытовой проверкой и не заменяет охрану, техническую экспертизу, диагностику инженерных систем или услуги профильного специалиста.
-</p>
-
-</div>
-</section>
-
-<section class="contact" id="contact">
-<div class="wrap">
-
-<p class="tag">Связаться с Дмитрием</p>
-
-<h2>Расскажите, что нужно сделать</h2>
-
-<p>
-Позвоните или напишите. Коротко опишите задачу, место и желаемое время — после этого согласуем возможность выполнения и стоимость.
-</p>
-
-<div class="buttons">
-<a class="btn main" href="tel:+79607185126">Позвонить</a>
-</div>
-
-<p class="number">8 960 718-51-26</p>
-
-</div>
-</section>
-
-</main>
-
-<footer>
-© 2026 Помощь в Завидово · Дмитрий
-</footer>
-
-</body>
-</html>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Помощь в Завидово — Дмитрий</title>
+  <meta name="description" content="Помощь в Завидово и рядом: осмотр дома и участка, фото и видео, встреча доставки или мастера, перевозки, вывоз и бытовые задачи.">
+
+  <style>
+    :root {
+      --bg: #f5f3ed;
+      --card: #ffffff;
+      --text: #172019;
+      --muted: #687069;
+      --green: #315d42;
+      --green-dark: #244b34;
+      --line: #dedfd9;
+      --soft: #e9eee9;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    /* HEADER */
+
+    header {
+      border-bottom: 1px solid var(--line);
+      background: rgba(245, 243, 237, 0.96);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .header-inner {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      font-size: 23px;
+      font-weight: 800;
+    }
+
+    .phone {
+      font-size: 20px;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    /* HERO */
+
+    .hero {
+      padding: 90px 0 75px;
+    }
+
+    .eyebrow {
+      color: var(--green);
+      font-size: 17px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+    }
+
+    h1 {
+      font-size: clamp(48px, 8vw, 88px);
+      line-height: 0.98;
+      letter-spacing: -
